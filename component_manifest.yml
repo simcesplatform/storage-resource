@@ -3,7 +3,7 @@
 Name: StorageResource
 Type: platform
 Description: "Storage Resource component for the SimCes Platform"
-DockerImage: procem.ain.rd.tut.fi/simces/storage-resource
+DockerImage: ghcr.io/simcesplatform/storage-resource
 Attributes:
     ResourceStateFile:
         Environment: RESOURCE_STATE_CSV_FILE
