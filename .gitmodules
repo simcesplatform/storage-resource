@@ -4,5 +4,5 @@
 	branch = master
 [submodule "domain-tools"]
 	path = domain-tools
-	url = https://github.com/simcesplatform/domain-tools
+	url = https://github.com/simcesplatform/domain-tools.git
 	branch = master
