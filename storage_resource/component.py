@@ -253,10 +253,13 @@ async def start_component():
     '''
     Create and start a StorageResource component.
     '''
-    resource = create_component()
-    await resource.start()
-    while not resource.is_stopped:
-        await asyncio.sleep( 2 )
+    try:
+        resource = create_component()
+        await resource.start()
+        while not resource.is_stopped:
+            await asyncio.sleep( 2 )
+    except Exception as error:
+        LOGGER.error("{} : {}".format(type(error).__name__, error))
 
 if __name__ == '__main__':
     asyncio.run(start_component())
