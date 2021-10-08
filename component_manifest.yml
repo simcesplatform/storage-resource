@@ -1,0 +1,49 @@
+# The component manifest file for the Storage Resource component 
+
+Name: StorageResource
+Type: platform
+Description: "Storage Resource component for the SimCes Platform"
+DockerImage: procem.ain.rd.tut.fi/simces/storage-resource
+Attributes:
+    ResourceStateFile:
+        Environment: RESOURCE_STATE_CSV_FILE
+        Optional: true
+    ResourceFileDelimiter:
+        Environment: RESOURCE_STATE_CSV_DELIMITER
+        Optional: true
+        Default: ","
+    CustomerId:
+        Environment: CUSTOMER_ID 
+        Optional: true
+    Node:
+        Environment: NODE 
+        Optional: true
+    ChargeRate:
+        Environment: CHARGE_RATE
+        Optional: true
+        Default: 100.0
+    DischargeRate:
+        Environment: DISCHARGE_RATE
+        Optional: true
+        Default: 100.0
+    InitialStateOfCharge:
+        Environment: INITIAL_STATE_OF_CHARGE
+        Optional: false
+    KwhRated:
+        Environment: KWH_RATED
+        Optional: false
+    DischargeEfficiency:
+        Environment: DISCHARGE_EFFICIENCY
+        Optional: true
+        Default: 90.0
+    ChargeEfficiency:
+        Environment: CHARGE_EFFICIENCY
+        Optional: true
+        Default: 90.0
+    KwRated:
+        Environment: KW_RATED
+        Optional: false
+    SelfDischarge:
+        Environment: SELF_DISCHARGE
+        Optional: true
+        Default: 0.0

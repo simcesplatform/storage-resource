@@ -1,0 +1,6 @@
+[submodule "domain-messages"]
+	path = domain-messages
+	url = https://github.com/simcesplatform/domain-messages.git
+[submodule "domain-tools"]
+	path = domain-tools
+	url = https://github.com/simcesplatform/domain-tools
